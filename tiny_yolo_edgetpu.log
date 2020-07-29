@@ -1,0 +1,14 @@
+Edge TPU Compiler version 14.1.317412892
+Input: tiny_yolo.tflite
+Output: tiny_yolo_edgetpu.tflite
+
+Operator                       Count      Status
+
+CONCATENATION                  1          More than one subgraph is not supported
+MAX_POOL_2D                    6          Mapped to Edge TPU
+RESIZE_NEAREST_NEIGHBOR        1          Operation version not supported
+CONV_2D                        11         Mapped to Edge TPU
+CONV_2D                        2          More than one subgraph is not supported
+QUANTIZE                       1          Operation is otherwise supported, but not mapped due to some unspecified limitation
+QUANTIZE                       1          More than one subgraph is not supported
+QUANTIZE                       2          Mapped to Edge TPU
